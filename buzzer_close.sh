@@ -1,6 +1,6 @@
 #!/bin/bash
-http://elinux.org/CI20_GPIO_LED_Blink_Tutorial#Blink_an_LED_on_a_GPIO_pin_from_CI20.27s_command_shell
-
+# http://elinux.org/CI20_GPIO_LED_Blink_Tutorial#Blink_an_LED_on_a_GPIO_pin_from_CI20.27s_command_shell
+# http://elinux.org/RPi_GPIO_Code_Samples
 BUZZER=51
 LED0=66
 LED1=67
@@ -41,7 +41,7 @@ then
 	echo $LED1 > /sys/class/gpio/export
 else
 	echo "LED1 already exported"
-
+fi
 
 echo "Configuring GPIO $LED2"
 #check if the gpio is already exported
@@ -51,7 +51,7 @@ then
 	echo $LED2 > /sys/class/gpio/export
 else
 	echo "LED2 already exported"
-
+fi
 
 echo "Configuring GPIO $LED3"
 #check if the gpio is already exported
@@ -61,7 +61,7 @@ then
 	echo $LED3 > /sys/class/gpio/export
 else
 	echo "LED3 already exported"
-
+fi
 
 
 
