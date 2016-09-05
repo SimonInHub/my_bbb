@@ -86,19 +86,6 @@ echo "Set value as high"
 echo 1 > $LED0_DIR/value
 echo "New value: `cat $LED0_DIR/value`"
 
-#Endless loop
-echo "Start blinking, 1 sec on plus 1 sec off, press CTRL+C to end"
-while ( true );
-	do echo 1 > $LED0_DIR/value;
-	cat $LED0_DIR/value;
-	sleep 1;
-	echo 0 > $LED0_DIR/value;
-	cat $LED0_DIR/value;
-	sleep 1;
-done;
-
-
-
 
 echo "Current direction: `cat $LED1_DIR/direction`"
 echo "Set LED1 as output"
@@ -108,6 +95,38 @@ echo "Current value: `cat $LED1_DIR/value`"
 echo "Set value as high"
 echo 1 > $LED1_DIR/value
 echo "New value: `cat $LED1_DIR/value`"
+
+echo "Current direction: `cat $LED2_DIR/direction`"
+echo "Set LED2 as output"
+echo out > $LED2_DIR/direction
+echo "New LED2 direction: `cat $LED2_DIR/direction`"
+echo "Current value: `cat $LED1_DIR/value`"
+echo "Set value as high"
+echo 1 > $LED2_DIR/value
+echo "New value: `cat $LED2_DIR/value`"
+
+echo "Current direction: `cat $LED3_DIR/direction`"
+echo "Set LED3 as output"
+echo out > $LED3_DIR/direction
+echo "New LED3 direction: `cat $LED3_DIR/direction`"
+echo "Current value: `cat $LED3_DIR/value`"
+echo "Set value as high"
+echo 1 > $LED3_DIR/value
+echo "New value: `cat $LED3_DIR/value`"
+
+
+#Endless loop
+# echo "Start blinking, 1 sec on plus 1 sec off, press CTRL+C to end"
+# while ( true );
+# 	do echo 1 > $LED0_DIR/value;
+# 	cat $LED0_DIR/value;
+# 	sleep 1;
+# 	echo 0 > $LED0_DIR/value;
+# 	cat $LED0_DIR/value;
+# 	sleep 1;
+# done;
+
+
 
 #Endless loop
 echo "Start blinking, 1 sec on plus 1 sec off, press CTRL+C to end"
@@ -121,43 +140,29 @@ while ( true );
 done;
 
 
-echo "Current direction: `cat $LED2_DIR/direction`"
-echo "Set LED2 as output"
-echo out > $LED2_DIR/direction
-echo "New LED2 direction: `cat $LED2_DIR/direction`"
-echo "Current value: `cat $LED1_DIR/value`"
-echo "Set value as high"
-echo 1 > $LED2_DIR/value
-echo "New value: `cat $LED2_DIR/value`"
-
-#Endless loop
-echo "Start blinking, 1 sec on plus 1 sec off, press CTRL+C to end"
-while ( true );
-	do echo 1 > $LED2_DIR/value;
-	cat $LED2_DIR/value;
-	sleep 3;
-	echo 0 > $LED2_DIR/value;
-	cat $LED2_DIR/value;
-	sleep 3;
-done;
 
 
-echo "Current direction: `cat $LED3_DIR/direction`"
-echo "Set LED3 as output"
-echo out > $LED3_DIR/direction
-echo "New LED3 direction: `cat $LED3_DIR/direction`"
-echo "Current value: `cat $LED3_DIR/value`"
-echo "Set value as high"
-echo 1 > $LED3_DIR/value
-echo "New value: `cat $LED3_DIR/value`"
+# #Endless loop
+# echo "Start blinking, 1 sec on plus 1 sec off, press CTRL+C to end"
+# while ( true );
+# 	do echo 1 > $LED2_DIR/value;
+# 	cat $LED2_DIR/value;
+# 	sleep 3;
+# 	echo 0 > $LED2_DIR/value;
+# 	cat $LED2_DIR/value;
+# 	sleep 3;
+# done;
 
-#Endless loop
-echo "Start blinking, 1 sec on plus 1 sec off, press CTRL+C to end"
-while ( true );
-	do echo 1 > $LED3_DIR/value;
-	cat $LED3_DIR/value;
-	sleep 4;
-	echo 0 > $LED3_DIR/value;
-	cat $LED3_DIR/value;
-	sleep 4;
-done;
+
+
+
+# #Endless loop
+# echo "Start blinking, 1 sec on plus 1 sec off, press CTRL+C to end"
+# while ( true );
+# 	do echo 1 > $LED3_DIR/value;
+# 	cat $LED3_DIR/value;
+# 	sleep 4;
+# 	echo 0 > $LED3_DIR/value;
+# 	cat $LED3_DIR/value;
+# 	sleep 4;
+# done;
